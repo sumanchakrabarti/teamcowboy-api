@@ -1,4 +1,4 @@
-name: .NET
+name: CI/CD Build
 
 on:
   push:
@@ -23,3 +23,5 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
+    - name: Nuget Package
+      run: dotnet pack .\TeamCowboy.Api\TeamCowboy.Api.csproj
