@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>teamcowboy-api</id>
+    <version>$nugetversion$</version>
+    <description>A library for  coding in C# API for TeamCowboy </description>
+    <authors>sumanchakrabarti</authors>
+		<projectUrl>https://github.com/sumanchakrabarti/teamcowboy-api</projectUrl>
+		<licenseUrl>https://github.com/sumanchakrabarti/teamcowboy-api/blob/main/LICENSE</licenseUrl>
+		<license type="expression">MIT</license>
+		<repository type="git" url="https://github.com/sumanchakrabarti/teamcowboy-api.git" />
+		
+		<dependencies>
+		  <group targetFramework="net5.0">
+			<dependency id="Newtonsoft.Json" version="12.0.3" exclude="Build,Analyzers" />
+		  </group>
+		</dependencies>
+  </metadata>
+  <files>
+      <file src="TeamCowboy.Api\bin\Release\TeamCowboy.Api.dll" target="lib\net5.0" />
+  </files>
+</package>
