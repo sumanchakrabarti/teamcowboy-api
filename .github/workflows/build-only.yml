@@ -24,4 +24,4 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Nuget Package
-      run: dotnet pack .\TeamCowboy.Api\TeamCowboy.Api.csproj
+      run: dotnet pack /home/runner/work/teamcowboy-api/TeamCowboy.Api/TeamCowboy.Api.csproj
